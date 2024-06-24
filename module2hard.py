@@ -8,7 +8,7 @@ def generate_password(n):
 
 number = 0
 while number < 3 or number > 20:
-    number = int(input("Введите число для пароля от 3 до 20: "))
+    number = int(input("Введите число от 3 до 20: "))
 
 password = generate_password(number)
 print(f"Пароль для числа {number}: {password}")
