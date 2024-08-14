@@ -44,11 +44,13 @@ class House:
         return self.nFloors != other.nFloors
 
     def __add__(self, value):
-        self.nFloors += value
-        return self
+        if isinstance(value, int):
+            self.nFloors += value
+            return self
 
     def __iadd__(self, other):
-        return self + other
+        if isinstance(value, int):
+            return self + other
 
     def __radd__(self, other):
         return self + other
