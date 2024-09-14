@@ -15,12 +15,10 @@ class Animal:
         else:
             print(f"{self.name} не может есть {food}")
 
-
 class Plant:
     edible = False
     def __init__(self, name):
         self.name = name
-
 
 class Mammal(Animal):
     pass
@@ -35,7 +33,6 @@ class Fruit(Plant):
     def __init__(self, name):
         super().__init__(name)
         self.edible = True
-
 
 a1 = Predator('Волк с Уолл-Стрит')
 a2 = Mammal('Хатико')
