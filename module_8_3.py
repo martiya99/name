@@ -1,5 +1,4 @@
 class Car:
-
     def __init__(self, model: str, VIN: int, numbers: str):
         self.model = model
         if self.__is_valid_vin(VIN):
@@ -23,12 +22,10 @@ class Car:
         return True
     
 class IncorrectVinNumber(Exception):
-
     def __init__(self, message):
         self.message = message
 
 class IncorrectCarNumbers(Exception):
-
     def __init__(self, message):
         self.message = message
 
