@@ -1,9 +1,10 @@
-team1 = 'Мастера кода'
-team2 = 'Волшебники данных'
+team1 = '"Мастера кода"'
+team2 = '"Волшебники данных"'
 
 def num(team1_num=0, team2_num=0):
-    print('В команде %s участников: %s !' % (team1, team1_num))
-    print('Итого сегодня в командах участников: %s и %s !' % (team1_num, team2_num))
+    print('В команде %s %s участников!' % (team1, team1_num))
+    print('В команде %s %s участников!' % (team2, team2_num))
+    print('Итого сегодня в командах по %s и %s участников!' % (team1_num, team2_num))
 
 score1 = 0
 score2 = 0
@@ -12,7 +13,7 @@ def time(team1_time=0, team2_time=0, tasks_total=0):
     time1 = team1_time
     time2 = team2_time
 
-    print('Команда {} решила задач: {}!'.format(team2, score2))
+    print('Команда {} решила {} задач!'.format(team2, score2))
     print('{} решили задачи за {} cек. !'.format(team2, time2))
 
 def challenge_result(tasks_total=0, time_avg=0):
